@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giới Thiệu - Công Ty TNHH Hà Minh Trường</title>
+  <meta name="description" content="Giới thiệu Công ty TNHH Thương Mại Dịch Vụ Hà Minh Trường - Chuyên kinh doanh vật liệu xây dựng bán buôn & bán lẻ tại Bảo Lộc, Lâm Đồng." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #222;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #fff;
+      text-align: center;
+      padding: 20px 24px 18px;
+      border-top: 5px solid #0b5375;
+      border-bottom: 4px solid #0b5375;
+    }
+    .site-header .so-tai-chinh {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 2px;
+    }
+    .site-header .divider-star {
+      color: #e6f701;
+      font-size: 13px;
+      margin: 3px 0 4px;
+    }
+    .site-header h2.cty-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #c41212;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+    .site-header h1 {
+      font-size: clamp(30px, 7vw, 54px);
+      font-weight: 900;
+      color: #c41212;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .site-header .mst {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 6px;
+    }
+    .site-header .header-address {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    /* ===== NAV ===== */
+    nav.main-nav {
+      background: #0d8bc5;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav.main-nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 11px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    nav.main-nav a:hover,
+    nav.main-nav a.active {
+      background: #0d8bc5;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 16px 40px;
+    }
+
+    /* ===== INTRO SECTION ===== */
+    .intro-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      padding: 32px 30px;
+      margin-bottom: 28px;
+    }
+    .intro-section h2 {
+      color: #0b5375;
+      font-size: 21px;
+      font-weight: 800;
+      border-left: 5px solid #0b5375;
+      padding-left: 12px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .intro-section p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    /* ===== INFO TABLE ===== */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14.5px;
+    }
+    .info-table thead tr {
+      background: #0d8bc5;
+      color: #fff;
+    }
+    .info-table thead td {
+      padding: 12px 16px;
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+    }
+    .info-table tbody tr:nth-child(odd)  { background: #f0f7fa; }
+    .info-table tbody tr:nth-child(even) { background: #fff; }
+    .info-table tbody td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #d0e3ed;
+      vertical-align: top;
+    }
+    .info-table tbody td:first-child {
+      font-weight: 600;
+      color: #0b5375;
+      width: 38%;
+    }
+
+    /* ===== PRODUCTS GRID ===== */
+    .products-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      padding: 32px 30px;
+      margin-bottom: 28px;
+    }
+    .products-section h2 {
+      color: #0b5375;
+      font-size: 21px;
+      font-weight: 800;
+      border-left: 5px solid #0b5375;
+      padding-left: 12px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .products-tagline {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .product-card {
+      background: #f0f7fa;
+      border: 2px solid #d0e3ed;
+      border-radius: 8px;
+      padding: 18px 14px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(11,83,117,0.15);
+    }
+    .product-card .icon { font-size: 36px; margin-bottom: 8px; }
+    .product-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0b5375;
+      margin-bottom: 6px;
+    }
+    .product-card p { font-size: 13px; color: #555; line-height: 1.5; }
+
+    /* ===== COMMITMENT ===== */
+    .commitment-section {
+      background: #0d8bc5;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+    .commitment-section h2 {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .commitment-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .commitment-list li {
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .commitment-list li::before {
+      content: "✔";
+      color: #FFD700;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ===== HOTLINE BANNER ===== */
+    .hotline-banner {
+      background: #111;
+      border-radius: 10px;
+      padding: 24px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .hotline-banner .hotline-left h3 {
+      font-size: 15px;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .hotline-banner .hotline-left p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+    }
+    .hotline-numbers { display: flex; flex-direction: column; gap: 4px; text-align: center; }
+    .hotline-banner .hotline-number {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 900;
+      color: #FFD700;
+      text-decoration: none;
+      display: block;
+    }
+    .hotline-banner .address-block {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 18px 16px;
+      font-size: 13px;
+    }
+    footer strong { color: #FFD700; }
+
+    @media (max-width: 600px) {
+      .intro-section, .products-section, .commitment-section { padding: 22px 16px; }
+      .hotline-banner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="so-tai-chinh">SỞ TÀI CHÍNH TỈNH LÂM ĐỒNG</div>
+  <div class="divider-star">✦</div>
+  <h2 class="cty-label">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ</h2>
+  <h1>HÀ MINH TRƯỜNG</h1>
+  <div class="mst">MST: 5801548076</div>
+  <div class="header-address">
+    Đc: Số 61/4 Trần Hưng Đạo, Phường B'Lao, T. Lâm Đồng<br>
+    SĐT: <strong>0914.957.114</strong> – <strong>0983.957.114</strong>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Menu chính">
+  <a href="#" class="active">Trang chủ</a>
+  <a href="#">Giới thiệu</a>
+  <a href="#">Sản phẩm</a>
+  <a href="#">Báo giá</a>
+  <a href="#">Liên hệ</a>
+</nav>
+
+<main>
+
+  <section class="intro-section">
+    <h2>Sơ lược về Công ty TNHH Hà Minh Trường</h2>
+    <p>
+      <strong>Công ty TNHH Thương Mại Dịch Vụ Hà Minh Trường</strong> là đơn vị kinh doanh
+      vật liệu xây dựng (VLXD) chuyên nghiệp tại thành phố Bảo Lộc, tỉnh Lâm Đồng —
+      được Sở Tài chính tỉnh Lâm Đồng chứng nhận hoạt động.
+    </p>
+    <p>
+      Chúng tôi chuyên cung cấp đa dạng các loại vật liệu xây dựng chất lượng cao với hình thức
+      <strong>bán buôn &amp; bán lẻ</strong>, đáp ứng nhu cầu từ hộ gia đình đến các công trình
+      xây dựng lớn trong và ngoài tỉnh.
+    </p>
+    <p>
+      Với phương châm <em>"VLXD chất lượng – Giao nhanh B'Lao"</em>, Hà Minh Trường cam kết
+      mang đến nguồn hàng uy tín, giao tận chân công trình, tư vấn nhiệt tình và báo giá cạnh tranh.
+    </p>
+
+    <table class="info-table">
+      <thead>
+        <tr><td colspan="2">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ HÀ MINH TRƯỜNG</td></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mã số thuế</td>
+          <td>5801548076</td>
+        </tr>
+        <tr>
+          <td>Loại hình</td>
+          <td>Công ty TNHH – Thương mại dịch vụ VLXD bán buôn &amp; bán lẻ</td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>Số 61/4 Trần Hưng Đạo, Phường B'Lao, Thành phố Bảo Lộc, Tỉnh Lâm Đồng</td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td>
+            <a href="tel:0914957114" style="color:#0b5375; font-weight:700;">0914.957.114</a>
+            &nbsp;–&nbsp;
+            <a href="tel:0983957114" style="color:#0b5375; font-weight:700;">0983.957.114</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Zalo</td>
+          <td>0914.957.114</td>
+        </tr>
+        <tr>
+          <td>Giấy phép</td>
+          <td>Được cấp phép &amp; quản lý bởi Sở Tài chính tỉnh Lâm Đồng</td>
+        </tr>
+        <tr>
+          <td>Tình trạng</td>
+          <td>Đang hoạt động</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="products-section">
+    <h2>Sản phẩm kinh doanh</h2>
+    <p class="products-tagline">VLXD chất lượng – Giao nhanh B'Lao – Bao trọn gói tư vấn thiết kế</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="icon">🔩</div>
+        <h3>Sắt thép</h3>
+        <p>Sắt xây dựng, thép cuộn, thép hình, xà gồ các loại</p>
+      </div>
+      <div class="product-card">
+        <div class="icon">🪨</div>
+        <h3>Cát đá</h3>
+        <p>Cát xây tô, cát bê tông, đá 1×2, đá 4×6 và các loại đá xây dựng</p>
+      </div>
+      <div class="product-card">
+        <div class="icon">🏭</div>
+        <h3>Xi măng</h3>
+        <p>Xi măng INSEE và các thương hiệu xi măng chất lượng cao</p>
+      </div>
+      <div class="product-card">
+        <div class="icon">🌍</div>
+        <h3>Đất</h3>
+        <p>Đất san lấp mặt bằng, đất nền cho các công trình xây dựng</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="commitment-section">
+    <h2>Cam kết của chúng tôi</h2>
+    <ul class="commitment-list">
+      <li>Vật liệu xây dựng chất lượng, nguồn gốc rõ ràng</li>
+      <li>Giao hàng nhanh tận chân công trình tại Bảo Lộc</li>
+      <li>Giá cả cạnh tranh – bán buôn &amp; bán lẻ đều ưu đãi</li>
+      <li>Bao trọn gói tư vấn thiết kế công trình</li>
+      <li>Chuyên sỉ &amp; lẻ – phục vụ tận tâm mọi nhu cầu</li>
+      <li>Đội ngũ tư vấn nhiệt tình, kinh nghiệm lâu năm</li>
+    </ul>
+  </section>
+
+  <div class="hotline-banner">
+    <div class="hotline-left">
+      <h3>📞 HOTLINE HỖ TRỢ</h3>
+      <p>Liên hệ ngay để được báo giá &amp; tư vấn miễn phí</p>
+    </div>
+    <div class="hotline-numbers">
+      <a href="tel:0914957114" class="hotline-number">0914.957.114</a>
+      <a href="tel:0983957114" class="hotline-number">0983.957.114</a>
+    </div>
+    <div class="address-block">
+      📍 Số 61/4 Trần Hưng Đạo<br>
+      P. B'Lao, TP. Bảo Lộc, Lâm Đồng<br>
+      💬 Zalo: 0914.957.114
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 <strong>Công ty TNHH Thương Mại Dịch Vụ Hà Minh Trường</strong> – MST: 5801548076 | TP. Bảo Lộc, Lâm Đồng</p>
+</footer>
+
+</body>
+</html>
