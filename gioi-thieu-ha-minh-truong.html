@@ -22,7 +22,7 @@
       border-bottom: 4px solid #0b5375;
     }
     .site-header .so-tai-chinh {
-      font-size: 20px;
+      font-size: 23px; /* Đã tăng từ 20px -> 23px */
       font-weight: 700;
       letter-spacing: 1.25px;
       text-transform: uppercase;
@@ -31,18 +31,18 @@
     }
     .site-header .divider-star {
       color: #e6f701;
-      font-size: 13px;
+      font-size: 16px; /* Đã tăng từ 13px -> 16px */
       margin: 3px 0 4px;
     }
     .site-header h2.cty-label {
-      font-size: 14px;
+      font-size: 17px; /* Đã tăng từ 14px -> 17px */
       font-weight: 600;
       color: #c41212;
       letter-spacing: 0.5px;
       margin-bottom: 2px;
     }
     .site-header h1 {
-      font-size: clamp(30px, 7vw, 54px);
+      font-size: clamp(33px, 8vw, 57px); /* Đã tăng giới hạn clamp lên 3px */
       font-weight: 900;
       color: #c41212;
       line-height: 1.1;
@@ -50,13 +50,13 @@
       letter-spacing: 1px;
     }
     .site-header .mst {
-      font-size: 15px;
+      font-size: 18px; /* Đã tăng từ 15px -> 18px */
       font-weight: 600;
       color: #111;
       margin-bottom: 6px;
     }
     .site-header .header-address {
-      font-size: 15px;
+      font-size: 18px; /* Đã tăng từ 15px -> 18px */
       color: #333;
       line-height: 1.8;
     }
@@ -72,7 +72,7 @@
       color: #fff;
       text-decoration: none;
       padding: 11px 20px;
-      font-size: 13px;
+      font-size: 16px; /* Đã tăng từ 13px -> 16px */
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -80,7 +80,7 @@
     }
     nav.main-nav a:hover,
     nav.main-nav a.active {
-      background: #0d8bc5;
+      background: #0b7bb0; /* Chỉnh lại chút màu nền hover để phân biệt với nền nav */
     }
 
     /* ===== MAIN ===== */
@@ -100,7 +100,7 @@
     }
     .intro-section h2 {
       color: #0b5375;
-      font-size: 21px;
+      font-size: 24px; /* Đã tăng từ 21px -> 24px */
       font-weight: 800;
       border-left: 5px solid #0b5375;
       padding-left: 12px;
@@ -108,7 +108,7 @@
       text-transform: uppercase;
     }
     .intro-section p {
-      font-size: 15px;
+      font-size: 18px; /* Đã tăng từ 15px -> 18px */
       line-height: 1.8;
       color: #333;
       margin-bottom: 12px;
@@ -119,7 +119,7 @@
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
-      font-size: 14.5px;
+      font-size: 17.5px; /* Đã tăng từ 14.5px -> 17.5px */
     }
     .info-table thead tr {
       background: #0d8bc5;
@@ -128,7 +128,7 @@
     .info-table thead td {
       padding: 12px 16px;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 18px; /* Đã tăng từ 15px -> 18px */
       text-align: center;
     }
     .info-table tbody tr:nth-child(odd)  { background: #f0f7fa; }
@@ -154,7 +154,7 @@
     }
     .products-section h2 {
       color: #0b5375;
-      font-size: 21px;
+      font-size: 24px; /* Đã tăng từ 21px -> 24px */
       font-weight: 800;
       border-left: 5px solid #0b5375;
       padding-left: 12px;
@@ -162,14 +162,14 @@
       text-transform: uppercase;
     }
     .products-tagline {
-      font-size: 14px;
+      font-size: 17px; /* Đã tăng từ 14px -> 17px */
       color: #666;
       margin-bottom: 20px;
       font-style: italic;
     }
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tăng min-width từ 180px lên 200px để vừa vặn chữ to */
       gap: 16px;
     }
     .product-card {
@@ -184,14 +184,14 @@
       transform: translateY(-3px);
       box-shadow: 0 6px 18px rgba(11,83,117,0.15);
     }
-    .product-card .icon { font-size: 36px; margin-bottom: 8px; }
+    .product-card .icon { font-size: 39px; margin-bottom: 8px; } /* Đã tăng từ 36px -> 39px */
     .product-card h3 {
-      font-size: 16px;
+      font-size: 19px; /* Đã tăng từ 16px -> 19px */
       font-weight: 700;
       color: #0b5375;
       margin-bottom: 6px;
     }
-    .product-card p { font-size: 13px; color: #555; line-height: 1.5; }
+    .product-card p { font-size: 16px; color: #555; line-height: 1.5; } /* Đã tăng từ 13px -> 16px */
 
     /* ===== COMMITMENT ===== */
     .commitment-section {
@@ -202,7 +202,7 @@
       color: #fff;
     }
     .commitment-section h2 {
-      font-size: 20px;
+      font-size: 23px; /* Đã tăng từ 20px -> 23px */
       font-weight: 800;
       text-transform: uppercase;
       margin-bottom: 16px;
@@ -211,14 +211,14 @@
     .commitment-list {
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 12px;
     }
     .commitment-list li {
       background: rgba(255,255,255,0.15);
       border-radius: 8px;
       padding: 12px 16px;
-      font-size: 14px;
+      font-size: 17px; /* Đã tăng từ 14px -> 17px */
       line-height: 1.6;
       display: flex;
       align-items: flex-start;
@@ -245,25 +245,25 @@
       margin-bottom: 28px;
     }
     .hotline-banner .hotline-left h3 {
-      font-size: 15px;
+      font-size: 18px; /* Đã tăng từ 15px -> 18px */
       color: #fff;
       font-weight: 600;
       margin-bottom: 4px;
     }
     .hotline-banner .hotline-left p {
-      font-size: 13px;
+      font-size: 16px; /* Đã tăng từ 13px -> 16px */
       color: rgba(255,255,255,0.7);
     }
     .hotline-numbers { display: flex; flex-direction: column; gap: 4px; text-align: center; }
     .hotline-banner .hotline-number {
-      font-size: clamp(22px, 4vw, 34px);
+      font-size: clamp(25px, 5vw, 37px); /* Đã tăng giới hạn clamp thêm 3px */
       font-weight: 900;
       color: #FFD700;
       text-decoration: none;
       display: block;
     }
     .hotline-banner .address-block {
-      font-size: 13px;
+      font-size: 16px; /* Đã tăng từ 13px -> 16px */
       color: rgba(255,255,255,0.85);
       line-height: 1.8;
     }
@@ -274,7 +274,7 @@
       color: rgba(255,255,255,0.6);
       text-align: center;
       padding: 18px 16px;
-      font-size: 13px;
+      font-size: 16px; /* Đã tăng từ 13px -> 16px */
     }
     footer strong { color: #FFD700; }
 
